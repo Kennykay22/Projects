@@ -1,0 +1,136 @@
+
+
+
+
+/* Cacher les pages */
+main section {
+    display: none;
+}
+
+/* Afficher la page d'accueil */
+#main {
+    display: block;
+}
+
+
+
+
+
+/* Style général */
+body {
+    background-color: #181818;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titre principal */
+h1 {
+    color: #ff9800;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+/* Barre de navigation */
+nav {
+    background-color: #252525;
+    padding: 20px;
+}
+
+/* Liens de navigation */
+nav a {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #181818;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Survol des liens */
+nav a:hover {
+    background-color: #ffb74d;
+}
+
+/* Titres secondaires */
+h2 {
+    color: #ff9800;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/* Image du burger */
+#burger {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #ff9800;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Nom du burger */
+#nomBurger {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff9800;
+    margin-top: 20px;
+}
+
+/* Sections */
+section {
+    background-color: #252525;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 650px;
+    border-radius: 15px;
+}
+
+/* Boutons des formulaires */
+button {
+    background-color: #ff9800;
+    color: #181818;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffb74d;
+}
+
+/* Champs des formulaires */
+input, select {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+/* Messages d'erreur */
+.erreur {
+    color: #ff5252;
+    font-weight: bold;
+    margin: 15px;
+}
+
+/* Pied de page */
+footer {
+    color: #999;
+    padding: 20px;
+}
+
+/* Image des ingrédients */
+#imageIngredients {
+    width: 100%;
+    max-width: 550px;
+    border: 3px solid #ff9800;
+    border-radius: 15px;
+    box-sizing: border-box;
+}

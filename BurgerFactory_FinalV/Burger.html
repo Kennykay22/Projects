@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BurgerFactory</title>
+    <link rel="stylesheet" href="Burger.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>BurgerFactory</h1>
+
+        <nav>
+            <a href="#" onclick="afficherPage('main')">Accueil</a>
+
+            <a href="#" onclick="afficherPage('creationIngredient')">Création Ingrédient</a>
+
+            <a href="#" onclick="afficherPage('creationBurger')">Création Burger</a>
+
+            <a href="#" id="lienQuiSommesNous"
+            onclick="afficherPage('quiSommesNous')">Qui sommes-nous ?</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- debut, donc diapo des images  -->
+
+        <section id = "main">
+            <h2>Bienvenue chez BurgerFactory</h2>
+
+            <!-- Image du burger -->
+            <img id="burger" src="ImageBurger1.jpg" alt="Burger">
+
+            <!-- Nom du burger affiché au clic -->
+            <p id="nomBurger"></p>
+        </section>
+
+        <!-- section qui concerne choisir quantite et nom ingredient  -->
+
+        <section id = "creationIngredient">
+             <h2>Créer votre Ingrédient</h2>
+             <form id="formIngredient">
+                
+                <label for="nomIng">Nom Ingredient : </label>
+                <input type="text" id = "nomIng" required placeholder="Ex: Pain">
+                
+                <br>
+                
+                <label for="quantite">Quantite Ingredient : </label>
+                <input type="number" id ="quantite" min = "1" required placeholder="quantite >0">
+
+                <button type = "submit" >Cree ingredient </button>
+
+                <button type="button" id="resetIngredients">
+                    Réinitialiser les ingrédients
+
+                <!-- Pas preciser dans les consigne mais je trouve que c'est mieux comme ca -->    
+                </button>
+
+             </form>
+            
+             <p id="erreurIngredient" class="erreur"></p>
+             <img id="imageIngredients" src="ImageIngredients.jpg" alt="Ingrédients">
+
+        </section>
+
+        <!-- section creation de burger, donc choisir les ingredients  -->
+
+        <section id="creationBurger">
+
+            <h2>Créer votre Burger</h2>
+
+    <form id="formBurger">
+
+        <label for="nomNouveauBurger">Nom du Burger :</label>
+        <input type="text" id="nomNouveauBurger" required
+               placeholder="Ex : Burger Simple">
+
+        <br>
+
+        <label for="ingredient1">Ingrédient 1 :</label>
+        <select id="ingredient1" required>
+            <option value="">Choisir un ingrédient</option>
+
+            
+            <option value="Pain">Pain</option>
+            <option value="Salade">Salade</option>
+            <option value="Tomate">Tomate</option>
+            <option value="Oignon">Oignon</option>
+            <option value="Fromage">Fromage</option>
+            <option value="Poulet">Poulet</option>
+            <option value="Steak">Steak</option>
+            
+        </select>
+
+
+        <br>
+
+        <label for="ingredient2">Ingrédient 2 :</label>
+        <select id="ingredient2" required>
+            <option value="">Choisir un ingrédient</option>
+            
+            
+            <option value="Pain">Pain</option>
+            <option value="Salade">Salade</option>
+            <option value="Tomate">Tomate</option>
+            <option value="Oignon">Oignon</option>
+            <option value="Fromage">Fromage</option>
+            <option value="Poulet">Poulet</option>
+            <option value="Steak">Steak</option>
+            
+
+        </select>
+
+        <br>
+
+        <label for="ingredient3">Ingrédient 3 :</label>
+        <select id="ingredient3" required>
+            <option value="">Choisir un ingrédient</option>
+            
+            
+            <option value="Pain">Pain</option>
+            <option value="Salade">Salade</option>
+            <option value="Tomate">Tomate</option>
+            <option value="Oignon">Oignon</option>
+            <option value="Fromage">Fromage</option>
+            <option value="Poulet">Poulet</option>
+            <option value="Steak">Steak</option>
+            
+        </select>
+
+        <br>
+
+        <button type="submit">Créer le burger</button>
+
+    </form>
+
+    <p id="erreurBurger" class="erreur"></p>
+
+
+        </section>
+
+    <section id="quiSommesNous">
+
+        <h2>Qui sommes Nous ?</h2>
+
+        <p>Chaque jour, nous préparons des burgers maison avec des produits frais et de qualité.</p>
+
+        <p id = "infoProducteur"></p>
+        <ul id="listeProductions"></ul>
+
+    </section>
+
+    </main>
+
+    <footer>
+        <p>BurgerFactory</p>
+    </footer>
+
+    <script src="burger.js"></script>
+
+</body>
+</html>
